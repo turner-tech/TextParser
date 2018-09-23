@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TextParser:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TextParser_jar</output-path>
+    <root id="archive" name="TextParser.jar">
+      <element id="module-output" name="TextParser" />
+    </root>
+  </artifact>
+</component>
