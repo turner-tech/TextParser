@@ -11,8 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.MainScreenController">
    <children>
       <BorderPane prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
@@ -20,7 +19,7 @@
               <menus>
                 <Menu mnemonicParsing="false" text="File">
                   <items>
-                    <MenuItem mnemonicParsing="false" text="Close" />
+                    <MenuItem mnemonicParsing="false" onAction="#exitApp" text="Close App" />
                   </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Edit">
@@ -84,7 +83,7 @@
                         <Button fx:id="saveFileButton" layoutX="813.0" layoutY="-1.0" mnemonicParsing="false" onAction="#saveFile" prefHeight="28.0" prefWidth="84.0" text="Save File" />
                         <TextField fx:id="removeText" layoutX="94.0" prefHeight="26.0" prefWidth="226.0" promptText="Enter Text You Want Removed" />
                         <TextField fx:id="keepText" layoutX="485.0" layoutY="-1.0" prefHeight="26.0" prefWidth="222.0" promptText="Enter Text You Want To Keep" />
-                        <Button fx:id="modifyTextButton" layoutX="708.0" mnemonicParsing="false" onAction="#readFile" prefHeight="21.0" prefWidth="103.0" text="Create File" />
+                        <Button fx:id="modifyTextButton" layoutX="708.0" mnemonicParsing="false" onAction="#readFile" prefHeight="21.0" prefWidth="103.0" text="Show Changes" />
                         <TextField fx:id="removeBetweenText" layoutX="320.0" layoutY="-1.0" prefHeight="26.0" prefWidth="166.0" promptText="Remove Text Between" />
                      </children>
                   </AnchorPane>
